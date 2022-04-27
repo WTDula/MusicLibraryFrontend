@@ -16,4 +16,5 @@ Total Unweighted Project Points: /60
 Bonus
 (10 points) As a music enthusiast, I want to be able to update the song data in my table using a modal popup window that initiates a PUT request to the Django REST API
 (5 points) As a music enthusiast, I want to be able to delete a song from my table, initiating a DELETE request to my Django REST API
+(? points) As a music enthusiast, I want to be able to like a song and see it update it's like data
 
