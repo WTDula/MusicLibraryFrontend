@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <SearchBar songs={songs} setSongs={setSongs}/>
-      <MusicTable songs={songs}/>
+      <MusicTable songs={songs} getAllSongs={getAllSongs}/>
       <AddButton createSong={createSong}/>
     </div>
   );

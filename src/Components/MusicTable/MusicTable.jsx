@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+//import DeleteButton from '../DeleteButton/DeleteButton';
 
 const MusicTable = (props) => {
     return ( 
@@ -24,8 +25,9 @@ const MusicTable = (props) => {
                             <td>{song.release_date}</td>
                             <td>{song.genre}</td>
                             <td>{song.likes}</td>
-                            <td>{song.image}</td>
+                            <td><img src={song.image} alt='album art' height={100} width={100}></img></td>
                             <button>Delete Filler</button>
+                            {/* <DeleteButton songID={song.id} getAllSongs={props.getAllSongs}/> */}
                             <button>Edit Filler</button>
                         </tr>
                     )
