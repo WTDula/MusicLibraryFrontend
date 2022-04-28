@@ -18,13 +18,18 @@ const SearchBar = (props) => {
             )
         })
         setSearchResults(filteredSongs)
-        props.setSongs(searchResults)
+        if(searchField.length > 0){
+            props.setSongs(searchResults)
+        }
+        // else{
+        //     props.setSongs(props.songs)
+        // }
     }
 
     return ( 
         <form onSubmit={handleChange}>
             <h3>Search For Your Song</h3>
-            <input type="search" placeholder='search song' id={searchField} onChange={event => setSearchField(event.target.value)}/>
+            <input type="search" placeholder='search song' value={searchField} onChange={event => setSearchField(event.target.value)}/>
             <button type='submit'>Double click to search</button>
         </form>
      );
