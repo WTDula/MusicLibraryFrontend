@@ -3,6 +3,7 @@ import axios from "axios";
 import MusicTable from "./Components/MusicTable/MusicTable";
 import AddButton from "./Components/AddButton/AddButton";
 import SearchBar from "./Components/SearchBar/SearchBar";
+import "./App.css"
 
 //import './App.css';
 
@@ -27,9 +28,11 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app">
+      <h1>Music Library</h1>
       <SearchBar songs={songs} setSongs={setSongs}/>
       <MusicTable songs={songs} getAllSongs={getAllSongs}/>
+      <h2>Add a Song with the form below</h2>
       <AddButton createSong={createSong}/>
     </div>
   );

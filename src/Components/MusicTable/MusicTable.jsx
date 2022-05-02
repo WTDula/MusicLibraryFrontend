@@ -1,4 +1,5 @@
 import React from 'react';
+import "./MusicTable.css"
 //import DeleteButton from '../DeleteButton/DeleteButton';
 
 const MusicTable = (props) => {

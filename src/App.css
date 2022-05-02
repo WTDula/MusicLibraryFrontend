@@ -1,0 +1,5 @@
+.app{
+    display: grid;
+    background-color: rgb(63, 134, 175);
+    justify-items: center;
+}
